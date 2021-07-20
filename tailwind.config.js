@@ -80,7 +80,7 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(-5deg)' },
           '50%': { transform: 'rotate(5deg)' },
         },
-        'fade-in-up': {
+        'fadeInUp': {
           '0%': {
             opacity: '0',
             transform: 'translateY(10rem)'
@@ -93,7 +93,7 @@ module.exports = {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
-        'fade-in-up': 'fade-in-up 1s ease-out'
+        fadeInUp: 'fadeInUp 1s ease-out'
       }
     }
   },

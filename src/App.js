@@ -6,6 +6,7 @@ import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 
+
 function App() {
   return (
     <>
