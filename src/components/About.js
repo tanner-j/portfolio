@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const About = () => {
     return (
         <section id="about">
-            <div className="bg-warmgray-100 h-auto xl:grid xl:grid-flow-col gap-16 md:p-24 p-20">
+            <div className="bg-warmgray-100 h-auto xl:grid xl:grid-flow-col gap-16 md:p-24 p-16">
                 <div className="xl:col-span-1">
                     <h1 className="font-bold font-sarabun tracking-tight text-4xl md:text-5xl">&lt;About Me &#47;&gt;</h1>
                     <div>
