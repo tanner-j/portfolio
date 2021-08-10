@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 const Hero = () => {
     return (
         <section id="hero">
-            <div className="bg-white h-screen flex flex-col justify-center items-center -m-10 overflow-hidden">
+            <div className="bg-white h-screen flex flex-col justify-center items-center overflow-hidden z-10 -mt-12">
                 <Fade>
                     <div className="hover:animate-wiggle">
                         <img src={profile} alt="Profile face" className="w-36 lg:w-40 mx-auto shadow-2xl border-solid border-2 border-black border-opacity-10 rounded-full" />
