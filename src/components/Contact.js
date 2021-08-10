@@ -4,18 +4,18 @@ import Slide from 'react-reveal/Slide'
 const Contact = () => {
     return (
         <section id="contact">
-                <div className="bg-amber-400 h-auto md:p-24 p-20 flex flex-col justify-center items-center xl:-mt-12">
+                <div className="bg-amber-400 h-auto md:p-24 p-20 flex flex-col justify-center items-center xl:-mt-12 overflow-x-hidden">
                     <Slide right>
                     <div className="bg-black rounded-2xl w-11/12 p-16 xl:-mt-48 -mt-36 shadow-2xl relative xl:flex xl:col-span-3 justify-between">
                         <h1 className="xl:p-0.5 pb-6 text-4xl md:text-5xl lg:text-6xl text-white font-sarabun font-bold tracking-tight text-center">Contact Me</h1>
                         <h2 className="xl:p-0.5 pb-6 text-xl md:text-2xl lg:text-3xl text-white font-sarabun text-center">Interested in connecting? <br />Reach out via email.</h2>
                         <a className="flex justify-center" href="mailto:tdjohnson330@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <button className="focus:outline-none rounded-full md:py-5 md:px-11 py-3 px-9 bg-black border-amber-400 border-4 md:text-xl text-lg text-white font-bold font-sarabun-bold hover:shadow-lg hover:bg-amber-400 hover:text-white">tdjohnson330@gmail.com</button>
+                            <button className="focus:outline-none rounded-full md:py-5 md:px-9 py-3 px-5 bg-black border-amber-400 border-4 md:text-xl text-sm text-white font-bold font-sarabun-bold hover:shadow-lg hover:bg-amber-400 hover:text-white">tdjohnson330@gmail.com</button>
                         </a>
                     </div>
                     </Slide>
                     <div className="w-2/3 flex flex-col items-center justify-center">
-                        <h2 className="xl:text-4xl text-3xl font-sarabun text-white text-center pt-24 pb-16">That mindset / That goal / That dream /<br />Build it.</h2>
+                        <h2 className="xl:text-4xl text-3xl font-sarabun text-white text-center md:pt-24 md:pb-16 pt-12 pb-12">That mindset / That goal / That dream /<br />Build it.</h2>
                         <div className="flex gap-x-4">
                             <a href="https://github.com/tanner-j" target="_blank" rel="noreferrer">
                                 <button className="focus:outline-none flex justify-center items-center border-opacity-50 border-white border-4 rounded-full w-16 h-16 hover:border-opacity-100 hover:bg-white hover:shadow-xl hover:fill-amber-400 text-white hover:text-amber-400">

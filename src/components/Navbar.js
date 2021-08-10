@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <section id="nav">
       <Slide top>
-        <nav className="z-20 flex justify-between items-center h-20 text-white text-lg relative shadow-xl bg-black" role="navigation">
+        <nav className="z-20 flex justify-between items-center h-20 text-white text-lg relative shadow-xl bg-black overflow-hidden" role="navigation">
           <Link to='nav' className="pl-8 cursor-pointer">
             <img src={websitelogo} alt="TJ" className="w-16 mx-auto" />
           </Link>

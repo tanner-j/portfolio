@@ -6,11 +6,11 @@ import Fade from 'react-reveal/Fade'
 const Projects = () => {
     return (
         <section id="projects">
-            <div className="bg-truegray-100 h-auto md:p-24 p-20">
+            <div className="bg-truegray-100 h-auto md:p-20 p-12 overflow-hidden">
                 <h1 className="font-bold font-sarabun tracking-tight text-4xl md:text-5xl">&lt;My Projects &#47;&gt;</h1>
                 {/* First project */}
                 <Fade bottom>
-                <div className="flex flex-wrap items-center pt-10 p-8 mb-6 xl:mb-32">
+                <div className="flex flex-wrap items-center pt-10 p-4 mb-6 xl:mb-32">
                     <div className="w-full xl:w-2/5 z-10">
                         <div className="text-left pb-3">
                             <h4 className="lg:text-3xl text-2xl font-sarabun font-bold">Restaurant Training App</h4>
@@ -19,7 +19,6 @@ const Projects = () => {
                         <div className="rounded pl-5 pt-2 xl:pr-24 mr-0 xl:-mr-16 mb-6">
                             <p className="font-sarabun text-xl leading-relaxed">
                                 I developed this application in response to a heavy influx of new trainees at a previous place of employment, Chick-fil-A Windy Hill. This interactive quiz provides users with useful training information, guidelines, and procedures, provided via requirements from the restaurant's Talent and Training Directors.<br /> This version of the application is currently used as a  practice tool, but eventually will be used as a scored assessment for trainees.
-
                             </p>
                         </div>
                         <div className="text-left">
@@ -39,14 +38,14 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full xl:w-3/5 mb-4 xl:mb-0 order-first xl:order-last">
+                    <div className="w-full xl:w-3/5 xl:pb-14 pb-4 order-first xl:order-last">
                         <img src={cfa} className="rounded-xl shadow-md border-truegray-200 border border-opacity-40" alt="CFA Windy Hill Training Quiz application" />
                     </div>   
                 </div>
                 </Fade>
                 {/* Next project */}
                 <Fade bottom>
-                <div className="flex flex-wrap items-center p-8 mb-6 xl:mb-32">
+                <div className="flex flex-wrap items-center p-4 mb-6 xl:mb-32 xl:-mt-24 pb-12 xl:pb-4">
                     <div className="w-full xl:w-2/5 z-10">
                         <div className="text-left pb-3">
                             <h4 className="lg:text-3xl text-2xl font-sarabun font-bold">Dog Day Care Robot</h4>
@@ -71,7 +70,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full xl:w-3/5 mb-4 xl:mb-0 order-first xl:order-last">
+                    <div className="w-full xl:w-3/5 xl:pb-24 pb-4 order-first xl:order-last">
                         <img src={dogapp} className="rounded-xl shadow-md border-truegray-200 border border-opacity-40 bg-gradient-to-b from-coolgray-900 to-warmgray-600" alt="Dog Day Care Robot application prototype" />
                     </div>
                 </div>
