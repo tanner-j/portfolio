@@ -4,7 +4,7 @@ import Slide from 'react-reveal/Slide'
 const Contact = () => {
     return (
         <section id="contact">
-                <div className="bg-amber-400 h-auto md:p-24 p-20 flex flex-col justify-center items-center xl:-mt-12 overflow-x-hidden">
+                <div className="bg-amber-400 h-auto md:p-24 p-20 flex flex-col justify-center items-center xl:-mt-12">
                     <Slide right>
                     <div className="bg-black rounded-2xl w-11/12 p-16 xl:-mt-48 -mt-36 shadow-2xl relative xl:flex xl:col-span-3 justify-between">
                         <h1 className="xl:p-0.5 pb-6 text-4xl md:text-5xl lg:text-6xl text-white font-sarabun font-bold tracking-tight text-center">Contact Me</h1>
