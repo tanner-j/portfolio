@@ -15,7 +15,7 @@ const Hero = () => {
 
                     <div className="text-center pb-10">
                         <h1 className="p-0.5 pt-5 text-8xl md:text-8xl lg:text-10xl text-black font-sarabun-bold font-black tracking-tight">
-                            Tanner Johnson
+                            This is a test
                         </h1>
                         <h1 className="p-0.5 text-5xl lg:text-6xl text-black font-sarabun-thin font-extralight">
                             <Typist>
