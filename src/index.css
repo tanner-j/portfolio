@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* HTML */
+html {
+    background-color: theme('colors.bg-color');
+}
+
+/* NAVBAR */
+.navbar-link {
+    position: relative;
+}
+
+.navbar-link::after {
+    position: absolute;
+    content: '';
+    bottom: 8px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    opacity: 0;
+    background-color: theme('colors.color-font-default');
+    transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* HERO */
+.heroheader {
+    position: relative;
+    border-radius: 0 0 50% 50%;
+}
+
+.heroheader:after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 70%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(/src/images/avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    pointer-events: none;
+}

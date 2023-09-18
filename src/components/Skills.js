@@ -4,8 +4,11 @@ import Fade from 'react-reveal/Fade'
 const Skills = () => {
     return (
         <section id="skills">
-            <div className="bg-white h-auto items-center md:p-20 p-12 overflow-hidden">
-                <h1 className="font-bold font-sarabun tracking-tight text-4xl md:text-5xl">&lt;My Skills &#47;&gt;</h1>
+            <div className="h-auto items-center md:p-20 p-12 overflow-hidden">
+                <h1 className="font-semibold text-2xl md:text-4xl">
+                    <span className="text-color-primary">&#47; </span>
+                    Skills
+                </h1>
                 <Fade bottom cascade>
                     <div className="xl:grid xl:grid-flow-col xl:grid-cols-3 gap-10 pt-8 xl:space-y-0 space-y-10">
 

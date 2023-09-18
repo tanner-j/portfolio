@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: {
@@ -7,38 +8,43 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
- /*   fontSize: {
-      'xs': '.75rem',
-      'sm': '.875rem',
-      'tiny': '.875rem',
-      'base': '1rem',
-      'lg': '1.125rem',
-      'xl': '1.25rem',
-      '2xl': '1.5rem',
-      '2.5xl': '1.62rem',
-      '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': '3rem',
-      '6xl': '4rem',
-      '7xl': '5rem',
-      '10xl': '11rem'
-    }, */
+    /*   fontSize: {
+         'xs': '.75rem',
+         'sm': '.875rem',
+         'tiny': '.875rem',
+         'base': '1rem',
+         'lg': '1.125rem',
+         'xl': '1.25rem',
+         '2xl': '1.5rem',
+         '2.5xl': '1.62rem',
+         '3xl': '1.875rem',
+         '4xl': '2.25rem',
+         '5xl': '3rem',
+         '6xl': '4rem',
+         '7xl': '5rem',
+         '10xl': '11rem'
+       }, */
     extend: {
       fontSize: {
         '2.5xl': '1.62rem',
+        '3.5xl': '2rem',
         '10xl': '11rem'
       },
       fontFamily: {
-        'space-grotesk': ['"Space Grotesk"', 'bold'],
-        'source-sans-pro': ['"Source Sans Pro"', 'regular'],
-        'titillium-web': ['"Titillium Web"', 'black'],
-        'sarabun': ['"Sarabun"', 'bold']
+        sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
+        'space-grotesk': ['"Space Grotesk"', ...defaultTheme.fontFamily.sans],
+        'inter': ['"Inter"', ...defaultTheme.fontFamily.sans]
       },
       boxShadow: {
         'xl': '0 23px 28px -2px rgba(0, 0, 0, 0.1), 0 13px 13px -2px rgba(0, 0, 0, 0.04)',
         '2xl': '0 30px 60px -12px rgba(0, 0, 0, 0.55)',
       },
       colors: {
+        'bg-color': '#FBFDFE',
+        'color-primary': '#1654BF',
+        'color-primary-light': '#E5F1FB',
+        'color-primary-dark': '#114092',
+        'color-font-default': '#04080F',
         'navy-blue': '#123859',
         transparent: "transparent",
         current: "currentColor",
