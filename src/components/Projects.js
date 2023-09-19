@@ -6,8 +6,11 @@ import Fade from 'react-reveal/Fade'
 const Projects = () => {
     return (
         <section id="projects">
-            <div className="bg-truegray-100 h-auto md:p-20 p-12 overflow-hidden">
-                <h1 className="font-bold font-sarabun tracking-tight text-4xl md:text-5xl">&lt;My Projects &#47;&gt;</h1>
+            <div className="h-auto md:p-20 p-12 overflow-hidden">
+                <h1 className="font-space-grotesk font-semibold text-2xl md:text-4xl">
+                    <span className="text-color-primary">&#47; </span>
+                    Recent Work
+                </h1>
                 {/* First project */}
                 <Fade bottom>
                 <div className="flex flex-wrap items-center pt-10 p-4 mb-6 xl:mb-32">

@@ -45,6 +45,7 @@ module.exports = {
         'color-primary-light': '#E5F1FB',
         'color-primary-dark': '#114092',
         'color-font-default': '#04080F',
+        'color-font-detail': '#505860',
         'navy-blue': '#123859',
         transparent: "transparent",
         current: "currentColor",

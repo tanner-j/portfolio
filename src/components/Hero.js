@@ -1,5 +1,4 @@
 import React from 'react'
-import profile from '../images/profile.png'
 import Typist from 'react-typist'
 import { Link } from 'react-scroll'
 import Fade from 'react-reveal/Fade'

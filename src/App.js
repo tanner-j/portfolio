@@ -4,7 +4,8 @@ import Hero from './components/Hero.js';
 import About from './components/About.js';
 import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
-import Contact from './components/Contact.js';
+import Experience from './components/Experience.js';
+// import Contact from './components/Contact.js';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+      <Experience />
+      {/* <Contact /> */}
     </>
   )
  
