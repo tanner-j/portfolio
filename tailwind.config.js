@@ -43,6 +43,7 @@ module.exports = {
         'bg-color': '#FBFDFE',
         'color-primary': '#1654BF',
         'color-primary-light': '#E5F1FB',
+        'color-secondary-light': '#FFF7EB',
         'color-primary-dark': '#114092',
         'color-font-default': '#04080F',
         'color-font-detail': '#505860',

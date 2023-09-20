@@ -6,8 +6,8 @@ import Fade from 'react-reveal/Fade';
 const About = () => {
     return (
         <section id="about">
-            <div className="bg-bg-color h-auto md:p-20 p-12 overflow-hidden">
-                <h1 className="font-semibold text-2xl md:text-4xl">
+            <div className="section-content about">
+                <h1 className="section-header">
                     <span className="text-color-primary">&#47; </span>
                     About Me
                 </h1>

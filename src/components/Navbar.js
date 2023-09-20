@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="about" smooth="true" onClick={handleClick}>About</Link>
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="skills" smooth="true" onClick={handleClick}>Skills</Link>
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="projects" smooth="true" onClick={handleClick}>Projects</Link>
-          <Link className="block py-2 px-6 pb-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="contact" smooth="true" onClick={handleClick}>Contact</Link>
+          <Link className="block py-2 px-6 pb-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="experience" smooth="true" onClick={handleClick}>Experience</Link>
         </div>
       </Slide>
   }
@@ -47,7 +47,7 @@ const Navbar = () => {
             <Link className="navbar-link py-4 cursor-pointer" to="about" smooth="true">About</Link>
             <Link className="navbar-link py-4 cursor-pointer" to="skills" smooth="true">Skills</Link>
             <Link className="navbar-link py-4 cursor-pointer" to="projects" smooth="true">Work</Link>
-            <Link className="navbar-link py-4 cursor-pointer" to="contact" smooth="true">Contact</Link>
+            <Link className="navbar-link py-4 cursor-pointer" to="experience" smooth="true">Experience</Link>
           </div>
         </nav>
       </Slide>

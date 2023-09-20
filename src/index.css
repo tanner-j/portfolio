@@ -51,11 +51,36 @@ html {
 }
 
 /* SECTION */
+.section-header {
+    @apply font-space-grotesk font-semibold text-2xl md:text-4xl pb-12;
+}
+
+.section-content.about,
+.section-content.experience,
+.section-content.skills {
+    @apply m-auto h-auto items-center md:p-20 p-12 overflow-hidden;
+    max-width: 1440px;
+}
+
 .section-content.experience {
-    background-color: red;
+    @apply bg-color-secondary-light;
 }
 
 /* SKILLS */
+.skills-filters {
+    @apply flex flex-wrap gap-4 pb-12;
+}
+
+.filter-item {
+    @apply relative cursor-pointer rounded-full bg-white;
+    border: 2px solid theme('colors.color-font-detail');
+    padding: 0.5rem 1rem 0.5rem 3rem;
+}
+
+.filter-item.filter-item--active {
+    border-color: theme('colors.color-primary');
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -86,4 +111,34 @@ html {
     width: 48px;
     height: 48px;
     object-fit: scale-down;
+}
+
+/* EXPERIENCE */
+.experience-container {
+    @apply flex flex-col gap-y-16 px-6 py-4;
+}
+
+.experience-item {
+    @apply w-full;
+}
+
+.experience-item .experience-item--header{
+    @apply pb-4;
+    border-bottom: 1px solid theme('colors.color-font-detail');
+}
+
+.experience-item .experience-item--header span {
+    @apply text-color-font-detail;
+}
+
+.experience-item .experience-item--header h2 {
+    @apply font-semibold text-xl;
+}
+
+.experience-item .experience-item--list {
+    @apply pt-4 pl-4 list-disc;
+}
+
+.experience-item .experience-item--list li:not(:first-of-type) {
+    @apply mt-2;
 }
