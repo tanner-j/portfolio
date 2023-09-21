@@ -7,27 +7,7 @@ html {
     background-color: theme('colors.bg-color');
 }
 
-/* NAVBAR */
-.navbar-link {
-    position: relative;
-}
 
-.navbar-link::after {
-    position: absolute;
-    content: '';
-    bottom: 8px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    opacity: 0;
-    background-color: theme('colors.color-font-default');
-    transition: opacity 0.2s ease, width 0.2s ease;
-}
-
-.navbar-link:hover::after {
-    width: 100%;
-    opacity: 1;
-}
 
 /* HERO */
 .heroheader {
@@ -57,8 +37,9 @@ html {
 
 .section-content.about,
 .section-content.experience,
+.section-content.projects,
 .section-content.skills {
-    @apply m-auto h-auto items-center md:p-20 p-12 overflow-hidden;
+    @apply m-auto h-auto items-center md:p-20 p-8 overflow-hidden;
     max-width: 1440px;
 }
 
@@ -88,7 +69,7 @@ html {
     grid-row-gap: 3rem;
 }
 
-.skill {
+.skill-item {
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-column-gap: 1rem;
@@ -113,13 +94,45 @@ html {
     object-fit: scale-down;
 }
 
+/* PROJECTS */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 32px;
+}
+
+.project-item {
+    @apply bg-white border border-gray-200 rounded-2xl overflow-hidden;
+    box-shadow: 0px 2px 28px 0px rgba(197, 197, 197, 0.25);
+}
+
+.project-item .project-item--image {
+    @apply p-6;
+}
+
+.project-item .project-item--image img {
+    @apply w-full h-60 object-scale-down;
+}
+
+.project-item .project-item--info {
+    @apply p-6 pt-3;
+}
+
+.project-item .project-item--info h2 {
+    @apply font-semibold text-2xl;
+}
+
+.project-item .project-item--info .project-item--description {
+    @apply text-color-font-detail;
+}
+
 /* EXPERIENCE */
 .experience-container {
     @apply flex flex-col gap-y-16 px-6 py-4;
 }
 
 .experience-item {
-    @apply w-full;
+    @apply w-2/3;
 }
 
 .experience-item .experience-item--header{
@@ -132,7 +145,7 @@ html {
 }
 
 .experience-item .experience-item--header h2 {
-    @apply font-semibold text-xl;
+    @apply font-semibold text-2xl;
 }
 
 .experience-item .experience-item--list {

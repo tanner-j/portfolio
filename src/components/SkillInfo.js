@@ -1,10 +1,10 @@
 import React from 'react'
 
 function SkillInfo(props) {
-    const { name, skillType, imageUrl, alt, experience } = props;
+    const { id, name, skillType, imageUrl, alt, experience } = props;
 
     return (
-                <div className="skill" data-skill-type={skillType}>
+                <div className="skill-item" data-skill-type={skillType} key={id}>
                     <div className="skill-icon">
                         <img src={imageUrl.default} alt={alt}></img>
                     </div>

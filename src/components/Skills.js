@@ -6,6 +6,7 @@ import SkillInfo from './SkillInfo'
 const Skills = () => {
     const skills = [
         {
+            id: "1",
             name: "JavaScript",
             skillType: "Development",
             imageUrl: require("../images/js-logo.png"),
@@ -13,6 +14,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "2",
             name: "HTML5",
             skillType: "Development",
             imageUrl: require("../images/html-logo.png"),
@@ -20,6 +22,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "3",
             name: "CSS3",
             skillType: "Development",
             imageUrl: require("../images/css-logo.png"),
@@ -27,6 +30,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "4",
             name: "SASS/SCSS",
             skillType: "Development",
             imageUrl: require("../images/sass-logo.png"),
@@ -34,6 +38,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "5",
             name: "Mendix (Intermediate)",
             skillType: "Development",
             imageUrl: require("../images/mendix-logo.png"),
@@ -41,6 +46,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "6",
             name: "Java",
             skillType: "Development",
             imageUrl: require("../images/java-logo.png"),
@@ -48,6 +54,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "7",
             name: "C++",
             skillType: "Development",
             imageUrl: require("../images/c++-logo.png"),
@@ -55,6 +62,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "8",
             name: "ReactJS",
             skillType: "Development",
             imageUrl: require("../images/react-logo.png"),
@@ -62,6 +70,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "9",
             name: "Tailwind CSS",
             skillType: "Development",
             imageUrl: require("../images/tailwind-logo.png"),
@@ -69,6 +78,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "10",
             name: "Bootstrap",
             skillType: "Development",
             imageUrl: require("../images/bootstrap-logo.png"),
@@ -76,6 +86,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "11",
             name: "Git",
             skillType: "Development",
             imageUrl: require("../images/git-logo.png"),
@@ -83,6 +94,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "12",
             name: "Figma",
             skillType: "UI/UX Design",
             imageUrl: require("../images/figma-logo.png"),
@@ -90,6 +102,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "13",
             name: "Web Accessibility",
             skillType: "Development",
             imageUrl: require("../images/a11y-logo.png"),
@@ -97,6 +110,7 @@ const Skills = () => {
             experience: "3+ years of experience"
         },
         {
+            id: "14",
             name: "Scrum",
             skillType: "Development",
             imageUrl: require("../images/scrum-logo.png"),
@@ -119,15 +133,15 @@ const Skills = () => {
                     Skills
                 </h1>
                 <div className="skills-filters">
-                    <label className="filter-item filter-item--active" data-filter-value="all" tabindex="0">
+                    <label className="filter-item filter-item--active" data-filter-value="all" tabIndex="0">
                         All
                         <input type="radio" name="skillFilter" value="all" checked={skillFilter === "all"} onChange={onOptionChange}/>
                     </label>
-                    <label className="filter-item" data-filter-value="design" tabindex="0">
+                    <label className="filter-item" data-filter-value="design" tabIndex="0">
                         UI/UX Design
                         <input type="radio" name="skillFilter" value="design" checked={skillFilter === "design"} onChange={onOptionChange}/>
                     </label>
-                    <label className="filter-item" data-filter-value="development" tabindex="0">
+                    <label className="filter-item" data-filter-value="development" tabIndex="0">
                         Development
                         <input type="radio" name="skillFilter" value="development" checked={skillFilter === "development"} onChange={onOptionChange}/>
                     </label>
@@ -135,6 +149,8 @@ const Skills = () => {
                 <div className="skills-container">
                     {skills.map((skill) => (
                         <SkillInfo
+                            key = {skill.id}
+                            id = {skill.id}
                             name = {skill.name}
                             skillType = {skill.skillType}
                             imageUrl = {skill.imageUrl}

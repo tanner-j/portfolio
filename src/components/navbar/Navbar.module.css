@@ -1,0 +1,18 @@
+/* Navbar component styling */
+.navbarContainer {
+    @apply relative z-20 flex justify-between items-center h-20 text-lg bg-color-primary-light overflow-hidden;
+}
+
+.navbarLink {
+    @apply relative py-4 cursor-pointer;
+}
+
+.navbarLink::after {
+    @apply absolute bottom-2 left-0 w-0 h-0.5 opacity-0 bg-color-font-default;
+    content: '';
+    transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.navbarLink:hover::after {
+    @apply w-full opacity-100;
+}

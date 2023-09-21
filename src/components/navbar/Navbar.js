@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import logo from '../images/logo.svg';
+import logo from '../../images/logo.svg';
 import Slide from 'react-reveal/Slide';
+import styles from './Navbar.module.css';
 
 
 const Navbar = () => {
@@ -34,7 +35,7 @@ const Navbar = () => {
   return (
     <section id="nav">
       <Slide top>
-        <nav className="relative z-20 flex justify-between items-center h-20 text-lg bg-color-primary-light overflow-hidden" role="navigation">
+        <nav className={styles.navbarContainer} role="navigation">
           <Link to='nav' className="pl-8 cursor-pointer">
             <img src={logo} alt="TJ" className="w-10 mx-auto" />
           </Link>
@@ -44,10 +45,10 @@ const Navbar = () => {
             </button>
           </div>
           <div className="pr-8 md:flex md:gap-x-8 hidden text-xl font-medium">
-            <Link className="navbar-link py-4 cursor-pointer" to="about" smooth="true">About</Link>
-            <Link className="navbar-link py-4 cursor-pointer" to="skills" smooth="true">Skills</Link>
-            <Link className="navbar-link py-4 cursor-pointer" to="projects" smooth="true">Work</Link>
-            <Link className="navbar-link py-4 cursor-pointer" to="experience" smooth="true">Experience</Link>
+            <Link className={styles.navbarLink} to="about" smooth="true">About</Link>
+            <Link className={styles.navbarLink} to="skills" smooth="true">Skills</Link>
+            <Link className={styles.navbarLink} to="projects" smooth="true">Work</Link>
+            <Link className={styles.navbarLink} to="experience" smooth="true">Experience</Link>
           </div>
         </nav>
       </Slide>
