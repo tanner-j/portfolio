@@ -13,8 +13,8 @@ const Hero = () => {
                         <span className="font-inter text-3.5xl">Hello! I'm</span>
                         <h1 className="text-8xl md:text-8xl lg:text-9xl font-space-grotesk font-bold tracking-tight">Tanner Johnson</h1>
                         <div className="flex justify-between">
-                            <span className="font-inter text-3.5xl">front-end developer</span>
-                            <span className="font-inter text-3.5xl">based in Denver, CO</span>
+                            <span className="text-3.5xl">front-end developer</span>
+                            <span className="text-3.5xl">based in Denver, CO</span>
                         </div>
                         <Link to="about" smooth="true">
                             <button className="focus:outline-none rounded-full mt-2 py-2 px-4 bg-color-primary items-center flex text-white justify-between float-right hover:bg-color-primary-dark hover:shadow-lg">

@@ -76,6 +76,8 @@ module.exports = {
         rose: colors.rose,
       },
       backgroundImage: {
+        'gradient-showcase': 'linear-gradient(45deg, #FFC700 0%, #FFE999 100%)',
+        'gradient-designsystem': 'linear-gradient(45deg, #2951DC 0%, #8098EA 100%);',
         'gradient-conic': 'conic-gradient(var(--tw-gradient-stops))',
         'gradient-conic-t': 'conic-gradient(at top, var(--tw-gradient-stops))',
         'gradient-conic-r': 'conic-gradient(at right, var(--tw-gradient-stops))',
@@ -95,6 +97,16 @@ module.exports = {
           '0%': {
             opacity: '0',
             transform: 'translateY(10rem)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        },
+        'pop': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-6rem)'
           },
           '100%': {
             opacity: '1',

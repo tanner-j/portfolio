@@ -11,7 +11,25 @@ const About = () => {
                     <span className="text-color-primary">&#47; </span>
                     About Me
                 </h1>
-                <div className="xl:grid xl:grid-cols-2 gap-12">
+                <div className="about-container">
+                    <div className="about-image--wrapper">
+                        <img src={about} alt="B&W portrait sitting on concrete wall" className="w-20 rounded-lg" />
+                    </div>
+                    <div className="about-info--wrapper">
+                        <div className="about-cards--wrapper">
+                            <div className="about-card">
+                                <p>Card 1</p>
+                            </div>
+                            <div className="about-card">
+                                <p>Card 2</p>
+                            </div>
+                        </div>
+                        <p>This is a test</p>
+                    </div>
+                </div>
+
+
+                {/* <div className="xl:grid xl:grid-cols-2 gap-12">
 
                     <div>
                         <Fade bottom>
@@ -37,7 +55,7 @@ const About = () => {
                             </div>
                         </Fade>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )

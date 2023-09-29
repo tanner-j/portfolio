@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import SkillInfo from './SkillInfo'
 
@@ -96,7 +95,7 @@ const Skills = () => {
         {
             id: "12",
             name: "Figma",
-            skillType: "UI/UX Design",
+            skillType: "Design",
             imageUrl: require("../images/figma-logo.png"),
             alt: "Figma icon",
             experience: "3+ years of experience"
@@ -119,11 +118,13 @@ const Skills = () => {
         },
     ]
 
-    const [skillFilter, setSkillFilter] = useState("all");
+    // State to track the currently active filter
+    const [activeFilter, setActiveFilter] = useState("all");
 
-    const onOptionChange = (e) => {
-        setSkillFilter(e.target.value);
-    }
+    // Function to handle filter clicks
+    const handleFilterClick = (filterValue) => {
+        setActiveFilter(filterValue);
+    };
 
     return (
         <section id="skills">
@@ -133,31 +134,32 @@ const Skills = () => {
                     Skills
                 </h1>
                 <div className="skills-filters">
-                    <label className="filter-item filter-item--active" data-filter-value="all" tabIndex="0">
+                    <label className={`filter-item ${activeFilter === "all" ? "filter-item--active" : ""}`} tabIndex="0" onClick={() => handleFilterClick("all")}>
                         All
-                        <input type="radio" name="skillFilter" value="all" checked={skillFilter === "all"} onChange={onOptionChange}/>
+                        <input type="radio" name="skillFilter" value="all"/>
                     </label>
-                    <label className="filter-item" data-filter-value="design" tabIndex="0">
+                    <label className={`filter-item ${activeFilter === "Design" ? "filter-item--active" : ""}`} tabIndex="0" onClick={() => handleFilterClick("Design")}>
                         UI/UX Design
-                        <input type="radio" name="skillFilter" value="design" checked={skillFilter === "design"} onChange={onOptionChange}/>
+                        <input type="radio" name="skillFilter" value="design"/>
                     </label>
-                    <label className="filter-item" data-filter-value="development" tabIndex="0">
+                    <label className={`filter-item ${activeFilter === "Development" ? "filter-item--active" : ""}`} tabIndex="0" onClick={() => handleFilterClick("Development")}>
                         Development
-                        <input type="radio" name="skillFilter" value="development" checked={skillFilter === "development"} onChange={onOptionChange}/>
+                        <input type="radio" name="skillFilter" value="development"/>
                     </label>
                 </div>
                 <div className="skills-container">
-                    {skills.map((skill) => (
-                        <SkillInfo
-                            key = {skill.id}
-                            id = {skill.id}
-                            name = {skill.name}
-                            skillType = {skill.skillType}
-                            imageUrl = {skill.imageUrl}
-                            alt = {skill.alt}
-                            experience = {skill.experience}
-                        />
-                    ))}
+                    {skills.filter((skill) => activeFilter === "all" || skill.skillType === activeFilter)
+                        .map((skill) => (
+                            <SkillInfo
+                                key={skill.id}
+                                id={skill.id}
+                                name={skill.name}
+                                skillType={skill.skillType}
+                                imageUrl={skill.imageUrl}
+                                alt={skill.alt}
+                                experience={skill.experience}
+                            />
+                        ))}
                 </div>
             </div>
         </section>
@@ -166,7 +168,14 @@ const Skills = () => {
 
 export default Skills;
 
-// const filterButtons = document.querySelectorAll('input[type="radio"][name="skillFilter"]');
+
+    // const [skillFilter, setSkillFilter] = useState("all");
+
+    // const onOptionChange = (e) => {
+    //     setSkillFilter(e.target.value);
+    // }
+
+//     const filterButtons = document.querySelectorAll('input[type="radio"][name="skillFilter"]');
 // let initiallyChecked = document.querySelector('input[type="radio"][name="skillFilter"]:checked');
  
 // filterButtons.forEach((filter) => {
@@ -178,7 +187,6 @@ export default Skills;
 //         }
 //     });
 // });
-
 
     // $("input[name='skillFilter']").change(function() {
     //     var selectedFilter = $("input[name='skillFilter']:checked").val();

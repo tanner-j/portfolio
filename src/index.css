@@ -4,15 +4,22 @@
 
 /* HTML */
 html {
-    background-color: theme('colors.bg-color');
+    @apply bg-bg-color;
 }
 
+#root {
+    @apply relative;
+}
 
+#nav {
+    @apply sticky top-0 z-50;
+}
 
 /* HERO */
 .heroheader {
-    position: relative;
+    @apply relative;
     border-radius: 0 0 50% 50%;
+    animation: 1000ms cubic-bezier(.26, .53, .74, 1.48) pop;
 }
 
 .heroheader:after {
@@ -43,8 +50,22 @@ html {
     max-width: 1440px;
 }
 
-.section-content.experience {
+section[id="experience"] {
     @apply bg-color-secondary-light;
+}
+
+/* ABOUT */
+.about-container {
+    @apply flex gap-16;
+}
+
+.about-cards--wrapper {
+    @apply flex gap-8;
+}
+
+.about-card {
+    @apply p-6 bg-white border border-gray-200 rounded-2xl overflow-hidden;
+    box-shadow: 0px 2px 28px 0px rgba(197, 197, 197, 0.25);   
 }
 
 /* SKILLS */
@@ -55,11 +76,32 @@ html {
 .filter-item {
     @apply relative cursor-pointer rounded-full bg-white;
     border: 2px solid theme('colors.color-font-detail');
-    padding: 0.5rem 1rem 0.5rem 3rem;
+    padding: 0.5rem 1.25rem 0.5rem 3rem;
+}
+
+.filter-item input {
+    @apply absolute top-0 opacity-0;
+}
+
+.filter-item::after {
+    @apply absolute left-4 h-5 w-5;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/src/images/circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .filter-item.filter-item--active {
+    @apply text-color-primary;
     border-color: theme('colors.color-primary');
+}
+
+.filter-item.filter-item--active::after {
+    background-image: url(/src/images/check-circle.svg);
+    filter: brightness(0) saturate(100%) invert(22%) sepia(60%) saturate(2709%) hue-rotate(208deg) brightness(97%) contrast(95%);
 }
 
 .skills-container {
@@ -107,7 +149,19 @@ html {
 }
 
 .project-item .project-item--image {
-    @apply p-6;
+    @apply bg-coolgray-100 p-6;
+}
+
+.project-item[id="logos"] .project-item--image {
+    @apply bg-white;
+}
+
+.project-item[id="designSystem"] .project-item--image {
+    @apply bg-gradient-designsystem;
+}
+
+.project-item[id="showcase"] .project-item--image {
+    @apply bg-gradient-showcase;
 }
 
 .project-item .project-item--image img {
@@ -115,15 +169,24 @@ html {
 }
 
 .project-item .project-item--info {
-    @apply p-6 pt-3;
+    @apply flex flex-col gap-y-2 p-6 pt-3;
 }
 
 .project-item .project-item--info h2 {
     @apply font-semibold text-2xl;
+    overflow-wrap: break-word;
 }
 
 .project-item .project-item--info .project-item--description {
     @apply text-color-font-detail;
+}
+
+.project-item .project-item--info .project-item--tags {
+    @apply flex flex-wrap gap-2;
+}
+
+.project-item .project-item--info .project-item--tags .tag {
+    @apply text-xs rounded-md py-1.5 px-2 bg-color-primary-light;
 }
 
 /* EXPERIENCE */
