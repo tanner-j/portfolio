@@ -23,7 +23,7 @@ const Navbar = () => {
   if (showMenu) {
     menu =
       <Slide top>
-        <div className="z-10 absolute w-full text-white text-3xl font-semibold bg-color-primary-light shadow-lg">
+        <div className="z-10 absolute w-full h-screen text-3xl font-semibold bg-color-primary-light shadow-lg">
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="about" smooth="true" onClick={handleClick}>About</Link>
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="skills" smooth="true" onClick={handleClick}>Skills</Link>
           <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="projects" smooth="true" onClick={handleClick}>Projects</Link>
@@ -49,6 +49,7 @@ const Navbar = () => {
             <Link className={styles.navbarLink} to="skills" smooth="true">Skills</Link>
             <Link className={styles.navbarLink} to="projects" smooth="true">Work</Link>
             <Link className={styles.navbarLink} to="experience" smooth="true">Experience</Link>
+            <Link className={styles.navbarLink} to="contact" smooth="true">Contact</Link>
           </div>
         </nav>
       </Slide>

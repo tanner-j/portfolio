@@ -25,6 +25,9 @@ module.exports = {
          '10xl': '11rem'
        }, */
     extend: {
+      minWidth: {
+        '96': '24rem'
+      },
       fontSize: {
         '2.5xl': '1.62rem',
         '3.5xl': '2rem',
@@ -43,6 +46,7 @@ module.exports = {
         'bg-color': '#FBFDFE',
         'color-primary': '#1654BF',
         'color-primary-light': '#E5F1FB',
+        'color-primary-light-opaque': '#E5F1FB40',
         'color-secondary-light': '#FFF7EB',
         'color-primary-dark': '#114092',
         'color-font-default': '#04080F',

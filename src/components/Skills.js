@@ -18,7 +18,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/html-logo.png"),
             alt: "HTML5 icon",
-            experience: "3+ years of experience"
+            experience: "5+ years of experience"
         },
         {
             id: "3",
@@ -26,7 +26,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/css-logo.png"),
             alt: "CSS3 icon",
-            experience: "3+ years of experience"
+            experience: "5+ years of experience"
         },
         {
             id: "4",
@@ -42,7 +42,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/mendix-logo.png"),
             alt: "Mendix icon",
-            experience: "3+ years of experience"
+            experience: "2+ years of experience"
         },
         {
             id: "6",
@@ -50,7 +50,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/java-logo.png"),
             alt: "Java icon",
-            experience: "3+ years of experience"
+            experience: "4+ years of experience"
         },
         {
             id: "7",
@@ -66,7 +66,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/react-logo.png"),
             alt: "ReactJS icon",
-            experience: "3+ years of experience"
+            experience: "4+ years of experience"
         },
         {
             id: "9",
@@ -74,7 +74,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/tailwind-logo.png"),
             alt: "Tailwind CSS icon",
-            experience: "3+ years of experience"
+            experience: "4+ years of experience"
         },
         {
             id: "10",
@@ -82,7 +82,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/bootstrap-logo.png"),
             alt: "Bootstrap icon",
-            experience: "3+ years of experience"
+            experience: "4+ years of experience"
         },
         {
             id: "11",
@@ -90,7 +90,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/git-logo.png"),
             alt: "Github icon",
-            experience: "3+ years of experience"
+            experience: "5+ years of experience"
         },
         {
             id: "12",
@@ -106,7 +106,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/a11y-logo.png"),
             alt: "Web accessibility icon",
-            experience: "3+ years of experience"
+            experience: "2+ years of experience"
         },
         {
             id: "14",
@@ -114,7 +114,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/scrum-logo.png"),
             alt: "Scrum icon",
-            experience: "3+ years of experience"
+            experience: "4+ years of experience"
         },
     ]
 

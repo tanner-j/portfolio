@@ -1,10 +1,32 @@
 import React from 'react'
-import Slide from 'react-reveal/Slide'
 
 const Contact = () => {
     return (
         <section id="contact">
-                <div className="bg-amber-400 h-auto md:p-20 p-16 flex flex-col justify-center items-center xl:-mt-12">
+            <div className="section-content contact">
+                <h1 className="section-header">Interested in connecting?</h1>
+                <div className="contact-wrapper">
+                    <div className="contact-links">
+                        <a className="contact-link email" href="mailto:tdjohnson330@gmail.com" target="_blank" rel="noopener noreferrer">tdjohnson330@gmail.com</a>
+                        <a className="contact-link phone" href="tel:14783081450">478-308-1450</a>
+                    </div>
+                    <div className="contact-apps">
+                        <a className="contact-app github" href="https://github.com/tanner-j" target="_blank" rel="noreferrer"></a>
+                        <a className="contact-app linkedin" href="https://linkedin.com/in/tanner-johnson-330" target="_blank" rel="noreferrer"></a>
+                    </div>
+                </div>
+                <div className="contact-footer">
+                    <span>&copy; 2023 Tanner Johnson</span>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Contact;
+
+
+{/* <div className="bg-amber-400 h-auto md:p-20 p-16 flex flex-col justify-center items-center xl:-mt-12">
                     <Slide right>
                     <div className="bg-black rounded-2xl md:w-11/12 w-full p-16 xl:-mt-48 -mt-36 shadow-2xl relative xl:flex xl:col-span-3 justify-between">
                         <h1 className="xl:p-0.5 pb-6 text-4xl md:text-5xl lg:text-6xl text-white font-sarabun font-bold tracking-tight text-center">Contact Me</h1>
@@ -35,9 +57,4 @@ const Contact = () => {
                         </div>
                         <h2 className="xl:text-xl text-lg font-sarabun text-white text-center pt-12 pb-6">Handcrafted by me &copy; Tanner Johnson</h2>
                     </div>
-                </div>
-        </section>
-    )
-}
-
-export default Contact;
+                </div> */}

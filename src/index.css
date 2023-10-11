@@ -15,28 +15,6 @@ html {
     @apply sticky top-0 z-50;
 }
 
-/* HERO */
-.heroheader {
-    @apply relative;
-    border-radius: 0 0 50% 50%;
-    animation: 1000ms cubic-bezier(.26, .53, .74, 1.48) pop;
-}
-
-.heroheader:after {
-    position: absolute;
-    content: '';
-    width: 40%;
-    height: 70%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(/src/images/avatar.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    pointer-events: none;
-}
-
 /* SECTION */
 .section-header {
     @apply font-space-grotesk font-semibold text-2xl md:text-4xl pb-12;
@@ -45,27 +23,195 @@ html {
 .section-content.about,
 .section-content.experience,
 .section-content.projects,
-.section-content.skills {
+.section-content.skills,
+.section-content.contact {
     @apply m-auto h-auto items-center md:p-20 p-8 overflow-hidden;
     max-width: 1440px;
 }
 
-section[id="experience"] {
+/* section[id="experience"] {
     @apply bg-color-secondary-light;
+} */
+
+
+
+/* section[id="hero"]:before {
+    @apply absolute top-0 left-0 h-full w-full overflow-hidden ;   
+    content: '';
 }
+
+section[id="hero"]:after {
+    @apply absolute top-0 left-0 h-full w-full bg-color-primary-light overflow-hidden;
+    content: '';
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    transform: scaleX(2.5);
+    z-index: 1;
+} */
+
+section[id="contact"] {
+    @apply bg-color-primary-dark text-white;
+}
+
+.section-content.contact {
+    @apply md:pb-12;
+}
+
+/* HERO */
+.heroheader {
+    @apply relative h-full flex justify-center content-start overflow-hidden z-10;
+    animation: 1000ms cubic-bezier(.26, .53, .74, 1.48) pop;
+    background-image: url(/src/images/avatar.png);
+    background-size: 22rem;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transform: scaleX(0.4);
+}
+
+section[id="hero"] {
+    @apply relative overflow-hidden bg-color-primary-light;
+    height: calc(100vh - 80px);
+    max-height: 52.5rem; /* 840px */
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    transform: scaleX(2.5);
+}
+/* 
+.heroheader:after {
+    @apply absolute bottom-0 left-0 h-full w-full;
+    content: '';
+
+} */
+
+/* Responsives styling */
+@media(min-width: 768px) {
+    section[id="hero"] {
+        max-height: 740px;
+    }
+
+    .heroheader {
+        background-size: 26rem; 
+    }
+}
+
+@media(min-width: 1024px) {
+    section[id="hero"] {
+        max-height: 728px;
+    }
+
+    .heroheader {
+        background-size: 26rem;
+    }
+}
+
+/* .heroheader:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(/src/images/avatar.png);
+    background-repeat: no-repeat;
+    background-size: 22rem;
+    background-position: bottom;
+    pointer-events: none;
+} */
+
+    /* Responsive styling */
+    /* @media(min-width: 768px) {
+        .heroheader:after{
+            background-size: 26rem;
+        }
+    } */
+
+.heroheader-content {
+    @apply pt-8 text-center;
+
+    /*Responsive styling */
+    @apply sm:pt-16;
+}
+
+.hero-text--detail {
+    @apply text-2.5xl;
+
+    /*Responsive styling */
+    @apply sm:text-3.5xl;
+}
+
+.heroheader-content h1 {
+    @apply text-7xl font-space-grotesk font-bold tracking-tight;
+
+    /* Responsive styling */
+    @apply sm:text-8xl lg:text-9xl;
+}
+
+.hero-text-detail--wrapper {
+    @apply flex flex-col justify-between;
+
+    /* Responsive styling */
+    @apply md:flex-row;
+}
+
+.heroheader-content .hero-btn--wrapper {
+    @apply flex justify-center;
+
+    /* Responsive styling */
+    @apply md:justify-end;
+}
+
+.hero-btn--wrapper .hero-btn {
+    @apply focus:outline-none rounded-full mt-2 py-2 px-4 bg-color-primary items-center flex text-white justify-between hover:bg-color-primary-dark hover:shadow-lg;
+}
+
+
 
 /* ABOUT */
 .about-container {
-    @apply flex gap-16;
+    @apply flex flex-col-reverse gap-16;
+
+    /* Responsive styling */
+    @apply sm:flex-row; 
 }
 
 .about-cards--wrapper {
-    @apply flex gap-8;
+    @apply flex flex-col gap-8 pb-8;
+
+    /* Responsive styling */
+    @apply lg:flex-row;
 }
 
 .about-card {
-    @apply p-6 bg-white border border-gray-200 rounded-2xl overflow-hidden;
+    @apply relative p-10 bg-white border border-gray-200 rounded-2xl text-center;
     box-shadow: 0px 2px 28px 0px rgba(197, 197, 197, 0.25);   
+
+    /* Responsive styling */
+    @apply sm:min-w-96;
+}
+
+.about-card h2 {
+    @apply pb-2 font-semibold text-2xl;
+    overflow-wrap: break-word;
+}
+
+.about-card p {
+    @apply text-color-font-detail;
+}
+
+.about-card::before {
+    @apply absolute top-0 left-1/2 w-12 h-12 bg-color-primary rounded-full;
+    content: '';
+    transform: translateX(-50%) translateY(-50%);
+    background-position: center;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+}
+
+.about-card[id="experience"]::before {
+    background-image: url(/src/images/briefcase-outline.svg);
+}
+
+.about-card[id="education"]::before {
+    background-image: url(/src/images/school-outline.svg);
 }
 
 /* SKILLS */
@@ -195,7 +341,10 @@ section[id="experience"] {
 }
 
 .experience-item {
-    @apply w-2/3;
+    @apply w-full;
+
+    /* Responsive styling */
+    @apply lg:w-2/3;
 }
 
 .experience-item .experience-item--header{
@@ -217,4 +366,73 @@ section[id="experience"] {
 
 .experience-item .experience-item--list li:not(:first-of-type) {
     @apply mt-2;
+}
+
+/* CONTACT */
+.contact-wrapper {
+    @apply flex flex-col gap-8;
+
+    /* Responsive styling */
+    @apply sm:flex-row sm:justify-between sm:items-center;
+}
+
+.contact-wrapper .contact-links {
+    @apply flex flex-col gap-2;
+}
+
+.contact-link {
+    @apply relative pl-8 underline;
+}
+
+.contact-link::after {
+    @apply absolute left-0 top-1/2 w-6 h-6 bg-center bg-contain bg-no-repeat;
+    content: '';
+    transform: translateY(-50%);
+}
+
+.contact-link.email::after {
+    background-image: url(/src/images/mail-outline.svg);
+}
+
+.contact-link.phone::after {
+    background-image: url(/src/images/call-outline.svg);
+}
+
+.contact-apps {
+    @apply flex gap-2 justify-center;
+}
+
+.contact-app {
+    @apply flex relative w-10 h-10 rounded-sm;
+}
+
+.contact-app::after {
+    @apply absolute left-1/2 top-1/2 w-8 h-8 bg-center bg-contain bg-no-repeat opacity-50;
+    content: '';
+    transform: translateX(-50%) translateY(-50%);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(14%) saturate(195%) hue-rotate(173deg) brightness(108%) contrast(97%);
+}
+
+.contact-app:hover {
+    @apply bg-color-primary-light-opaque;
+}
+
+.contact-app:hover::after {
+    @apply opacity-100;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(166deg) brightness(108%) contrast(101%);
+}
+
+.contact-app.github::after {
+    background-image: url(/src/images/logo-github.svg);
+}
+
+.contact-app.linkedin::after {
+    background-image: url(/src/images/logo-linkedin.svg);
+}
+
+.contact-footer {
+    @apply mt-8 pt-8 text-center border-t border-color-primary-light-opaque;
+
+    /* Responsive styling */
+    @apply sm:mt-12;
 }

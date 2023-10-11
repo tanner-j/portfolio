@@ -10,6 +10,7 @@ const Projects = () => {
             title: "Recent Client Projects",
             tags: ["UI/UX Design", "Front-end Development", "Design System", "Accessibility", "Mendix"],
             description: "Several of my recent projects are internal or private, preventing me from sharing them publicly. With that being said, here are a few of the customers I have worked with at Mendix.",
+            projectUrl: ""
         },
         {
             id: "designSystem",
@@ -18,6 +19,7 @@ const Projects = () => {
             title: "Design System Starter",
             tags: ["UI/UX Design", "Front-end Development", "Accessibility", "Figma", "Mendix"],
             description: "A downloadable starter package providing accessible components, tools, and documentation for designers and developers as a foundation for their own design system.",
+            projectUrl: "https://designsystemstarter-sandbox.mxapps.io/",
         },
         {
             id: "showcase",
@@ -26,6 +28,7 @@ const Projects = () => {
             title: "UI Showcase App",
             tags: ["UI/UX Design", "Front-end Development", "Figma", "Mendix"],
             description: "A showcase application designed to exemplify UI services offered by the Mendix Expert Services design team in an effort to increase package sales.",
+            projectUrl: "https://designsystemstarter-sandbox.mxapps.io/",
         },
     ];
 
@@ -46,6 +49,7 @@ const Projects = () => {
                             title = {project.title}
                             tags = {project.tags}
                             description = {project.description}
+                            projectUrl = {project.projectUrl}
                         />
                     ))}
                 </div>
