@@ -9,7 +9,7 @@ function ProjectCard(props, index) {
      const projectContainer = projectUrl ? (
     <a href={projectUrl} className="project-item" key={index} id={id}>
             <div className="project-item--image">
-                <img src={imageUrl.default} alt={alt}/>
+                <img src={imageUrl.default} alt={alt} loading="lazy"/>
             </div>
             <div className="project-item--info">
                 <h2 className="project-item--header">{title}</h2>
@@ -25,7 +25,7 @@ function ProjectCard(props, index) {
      ) : (
         <div className="project-item" key={index} id={id}>
             <div className="project-item--image">
-                <img src={imageUrl.default} alt={alt}/>
+                <img src={imageUrl.default} alt={alt} loading="lazy"/>
             </div>
             <div className="project-item--info">
                 <h2 className="project-item--header">{title}</h2>

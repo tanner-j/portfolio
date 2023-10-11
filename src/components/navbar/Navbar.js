@@ -23,36 +23,40 @@ const Navbar = () => {
   if (showMenu) {
     menu =
       <Slide top>
-        <div className="z-10 absolute w-full h-screen text-3xl font-semibold bg-color-primary-light shadow-lg">
-          <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="about" smooth="true" onClick={handleClick}>About</Link>
-          <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="skills" smooth="true" onClick={handleClick}>Skills</Link>
-          <Link className="block py-2 px-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="projects" smooth="true" onClick={handleClick}>Projects</Link>
-          <Link className="block py-2 px-6 pb-6 hover:text-amber-400 hover:underline cursor-pointer text-right" to="experience" smooth="true" onClick={handleClick}>Experience</Link>
+        <div className={styles.navbar_container__mobile}>
+          <Link className={styles.navbar_link__mobile} to="about" smooth="true" onClick={handleClick}>About</Link>
+          <Link className={styles.navbar_link__mobile} to="skills" smooth="true" onClick={handleClick}>Skills</Link>
+          <Link className={styles.navbar_link__mobile} to="projects" smooth="true" onClick={handleClick}>Work</Link>
+          <Link className={styles.navbar_link__mobile} to="experience" smooth="true" onClick={handleClick}>Experience</Link>
+          <Link className={styles.navbar_link__mobile} to="contact" smooth="true" onClick={handleClick}>Contact</Link>
         </div>
       </Slide>
   }
 
   return (
     <section id="nav">
-      <Slide top>
-        <nav className={styles.navbarContainer} role="navigation">
+        <nav className={styles.navbar_container} role="navigation">
           <Link to='nav' className="pl-8 cursor-pointer">
             <img src={logo} alt="TJ" className="w-10 mx-auto" />
           </Link>
-          <div className="px-4 cursor-pointer md:hidden">
-            <button className="mobile-menu-button focus:outline-none w-6" onClick={handleClick}>
-              <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+          <div className={styles.menu_toggle__wrapper}>
+            <button className={styles.btn_menu__toggle} onClick={handleClick}>
+              <span className="sr-only">Open main menu</span>
+              <div className={styles.icon_wrapper}>
+                <span aria-hidden="true" className={`${styles.icon_hmbrgr__line} ${styles.line_top} ${click ? styles.line_top__open : styles.line_top}`}></span>
+                <span aria-hidden="true" className={`${styles.icon_hmbrgr__line} ${click ? 'opacity-0 ' : ''}`}></span>
+                <span aria-hidden="true" className={`${styles.icon_hmbrgr__line} ${styles.line_bottom} ${click ? styles.line_bottom__open : styles.line_bottom}`}></span>
+              </div>
             </button>
           </div>
-          <div className="pr-8 md:flex md:gap-x-8 hidden text-xl font-medium">
-            <Link className={styles.navbarLink} to="about" smooth="true">About</Link>
-            <Link className={styles.navbarLink} to="skills" smooth="true">Skills</Link>
-            <Link className={styles.navbarLink} to="projects" smooth="true">Work</Link>
-            <Link className={styles.navbarLink} to="experience" smooth="true">Experience</Link>
-            <Link className={styles.navbarLink} to="contact" smooth="true">Contact</Link>
+          <div className={styles.navbar_link__wrapper}>
+            <Link className={styles.navbar_link} to="about" smooth="true">About</Link>
+            <Link className={styles.navbar_link} to="skills" smooth="true">Skills</Link>
+            <Link className={styles.navbar_link} to="projects" smooth="true">Work</Link>
+            <Link className={styles.navbar_link} to="experience" smooth="true">Experience</Link>
+            <Link className={styles.navbar_link} to="contact" smooth="true">Contact</Link>
           </div>
         </nav>
-      </Slide>
 
       {/*Mobile menu*/}
       {menu}

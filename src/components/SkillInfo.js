@@ -6,7 +6,7 @@ function SkillInfo(props) {
     return (
                 <div className="skill-item" data-skill-type={skillType} key={id}>
                     <div className="skill-icon">
-                        <img src={imageUrl.default} alt={alt}></img>
+                        <img src={imageUrl.default} alt={alt} loading="lazy"></img>
                     </div>
                     <div className="skill-info">
                         <p className="font-semibold text-lg">{name}</p>
