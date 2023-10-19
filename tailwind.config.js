@@ -49,6 +49,7 @@ module.exports = {
         'color-primary-light-opaque': '#E5F1FB40',
         'color-secondary-light': '#FFF7EB',
         'color-primary-dark': '#114092',
+        'color-accent': '#871CC4',
         'color-font-default': '#04080F',
         'color-font-detail': '#505860',
         'navy-blue': '#123859',

@@ -10,7 +10,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/js-logo.png"),
             alt: "JavaScript icon",
-            experience: "3+ years of experience"
+            experience: "3+ years experience"
         },
         {
             id: "2",
@@ -18,7 +18,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/html-logo.png"),
             alt: "HTML5 icon",
-            experience: "5+ years of experience"
+            experience: "5+ years experience"
         },
         {
             id: "3",
@@ -26,7 +26,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/css-logo.png"),
             alt: "CSS3 icon",
-            experience: "5+ years of experience"
+            experience: "5+ years experience"
         },
         {
             id: "4",
@@ -34,7 +34,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/sass-logo.png"),
             alt: "SASS/SCSS icon",
-            experience: "3+ years of experience"
+            experience: "3+ years experience"
         },
         {
             id: "5",
@@ -42,7 +42,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/mendix-logo.png"),
             alt: "Mendix icon",
-            experience: "2+ years of experience"
+            experience: "2+ years experience"
         },
         {
             id: "6",
@@ -50,7 +50,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/java-logo.png"),
             alt: "Java icon",
-            experience: "4+ years of experience"
+            experience: "4+ years experience"
         },
         {
             id: "7",
@@ -58,7 +58,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/c++-logo.png"),
             alt: "C++ icon",
-            experience: "3+ years of experience"
+            experience: "3+ years experience"
         },
         {
             id: "8",
@@ -66,7 +66,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/react-logo.png"),
             alt: "ReactJS icon",
-            experience: "4+ years of experience"
+            experience: "4+ years experience"
         },
         {
             id: "9",
@@ -74,7 +74,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/tailwind-logo.png"),
             alt: "Tailwind CSS icon",
-            experience: "4+ years of experience"
+            experience: "4+ years experience"
         },
         {
             id: "10",
@@ -82,7 +82,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/bootstrap-logo.png"),
             alt: "Bootstrap icon",
-            experience: "4+ years of experience"
+            experience: "4+ years experience"
         },
         {
             id: "11",
@@ -90,7 +90,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/git-logo.png"),
             alt: "Github icon",
-            experience: "5+ years of experience"
+            experience: "5+ years experience"
         },
         {
             id: "12",
@@ -98,7 +98,7 @@ const Skills = () => {
             skillType: "Design",
             imageUrl: require("../images/figma-logo.png"),
             alt: "Figma icon",
-            experience: "3+ years of experience"
+            experience: "3+ years experience"
         },
         {
             id: "13",
@@ -106,7 +106,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/a11y-logo.png"),
             alt: "Web accessibility icon",
-            experience: "2+ years of experience"
+            experience: "2+ years experience"
         },
         {
             id: "14",
@@ -114,7 +114,7 @@ const Skills = () => {
             skillType: "Development",
             imageUrl: require("../images/scrum-logo.png"),
             alt: "Scrum icon",
-            experience: "4+ years of experience"
+            experience: "4+ years experience"
         },
     ]
 

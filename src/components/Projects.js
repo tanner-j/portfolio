@@ -28,7 +28,7 @@ const Projects = () => {
             title: "UI Showcase App",
             tags: ["UI/UX Design", "Front-end Development", "Figma", "Mendix"],
             description: "A showcase application designed to exemplify UI services offered by the Mendix Expert Services design team in an effort to increase package sales.",
-            projectUrl: "https://designsystemstarter-sandbox.mxapps.io/",
+            projectUrl: "https://www.figma.com/file/2cra2xSoLghfy0V2KDhdDG/UI-Showcase-App?type=design&node-id=0%3A1&mode=design&t=FEuH7Y8GLrGY1h4v-1",
         },
     ];
 
