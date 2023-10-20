@@ -206,6 +206,10 @@ section[id="contact"] {
     background-image: url(/src/images/school-outline.svg);
 }
 
+.about-image--wrapper {
+    @apply flex;
+}
+
 /* SKILLS */
 .skills-filters {
     @apply flex flex-wrap gap-4 pb-12;
